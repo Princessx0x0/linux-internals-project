@@ -14,10 +14,14 @@ Even though WSL doesn’t use a traditional bootloader or BIOS for Linux,
 I can still inspect the init system and active services.
 
 Check what process is PID 1:
+```bash
 ps -p 1 -o comm=
+```
 
 List running services (WSL systemd):
+```bash
 systemctl list-units --type=service --state=running
+```
 
 3. Summary (In My Words)
 The bootloader starts Linux
