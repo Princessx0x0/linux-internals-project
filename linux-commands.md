@@ -1,9 +1,8 @@
-Linux Commands – Quick Reference
+# Linux Commands – Quick Reference
+A personal cheat-sheet of useful Linux commands I’ve learned and used while studying Linux internals.
 
-A personal cheat-sheet of useful Linux commands I’ve learned and used
-while studying Linux internals.
 
-File & Directory Commands
+## File & Directory Commands
 ```bash
 ls            # list files
 ls -l         # detailed list
@@ -18,7 +17,7 @@ mv SRC DST    # move/rename files
 ```
 
 
-System Information
+## System Information
 ```bash
 uname -a       # kernel info
 hostnamectl    # OS + kernel + machine info
@@ -29,7 +28,7 @@ top            # running processes
 ```
 
 
-Package Management (Ubuntu / Debian)
+## Package Management (Ubuntu / Debian)
 ```bash
 sudo apt update
 sudo apt upgrade
@@ -38,7 +37,7 @@ sudo apt remove PACKAGE
 ```
 
 
-Filesystem & Partitions
+## Filesystem & Partitions
 ```bash
 lsblk             # list block devices
 mount             # show mounted filesystems
@@ -47,7 +46,7 @@ sudo mkfs.ext4    # format a filesystem (NOT in WSL)
 ```
 
 
-Services (Using systemd)
+## Services (Using systemd)
 ```bash
 systemctl status SERVICE
 systemctl start SERVICE
@@ -57,14 +56,14 @@ systemctl disable SERVICE
 ```
 
 
-Process Management
+## Process Management
 ```bash
 ps aux        # list all processes
 kill PID      # kill process
 pgrep NAME    # find PID by name
 ```
 
-Networking
+## Networking
 ```bash
 ip a               # show network interfaces
 ping google.com    # test connectivity
